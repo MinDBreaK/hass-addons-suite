@@ -78,6 +78,9 @@ schema:
     time: bool?
     wifi: bool?
     hwmon: bool?
-  custom_collectors: list()
-  ignore_mount_points: list()
-  ignore_network_devices: list()
+  custom_collectors: 
+    - "match(^\\w*$)"
+  ignore_mount_points: 
+    - "match(^\\w*$)"
+  ignore_network_devices: 
+    - "match(^\\w*$)"
